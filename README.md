@@ -1,2 +1,3 @@
 # DevCircle-Africa-Version
-New development
+- New development
+- Deployments for new frontend build
