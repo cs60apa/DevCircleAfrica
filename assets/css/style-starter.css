@@ -16,14 +16,14 @@ Author URL: http://w3layouts.com
   --pink: #e83e8c;
   --red: #dc3545;
   --orange: #fd7e14;
-  --yellow: #ffc107;
+  --primary: #ffc107;
   --green: #28a745;
   --teal: #20c997;
   --cyan: #17a2b8;
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #FE79A2;
+  --pitch: #FE79A2;
   --secondary: #1545CB;
   --success: #28a745;
   --info: #17a2b8;
@@ -137,11 +137,11 @@ sup {
   top: -.5em; }
 
 a {
-  color: #FE79A2;
+  color: #ffc107;
   text-decoration: none;
   background-color: transparent; }
   a:hover {
-    color: #fd2d6d;
+    color: #e18e18;
     text-decoration: underline; }
 
 a:not([href]) {
@@ -169,7 +169,9 @@ figure {
 img {
   vertical-align: middle;
   border-style: none; }
-
+span img {
+  padding: 4px;
+}
 svg {
   overflow: hidden;
   vertical-align: middle; }
@@ -1826,12 +1828,12 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #212529;
-  background-color: #FE79A2;
-  border-color: #FE79A2; }
+  background-color: #ffc107;
+  border-color: #ffc107; }
   .btn-primary:hover {
     color: #fff;
-    background-color: #fe5388;
-    border-color: #fe467f; }
+    background-color: #ffc120;
+    border-color: #ffc120; }
   .btn-primary:focus, .btn-primary.focus {
     color: #fff;
     background-color: #fe5388;
@@ -2437,7 +2439,7 @@ input[type="button"].btn-block {
   .dropdown-item.active, .dropdown-item:active {
     color: #fff;
     text-decoration: none;
-    background-color: #FE79A2; }
+    background-color: #ffc107; }
   .dropdown-item.disabled, .dropdown-item:disabled {
     color: #6c757d;
     pointer-events: none;
@@ -9555,11 +9557,11 @@ a.text-dark:hover, a.text-dark:focus {
   clip: auto; }
 
 :root {
-  --primary-color: #FE79A2;
+  --primary-color: #ffc107;
   --secondary-color: #1545CB;
   --font-color: #666;
   --bg-color: #fff;
-  --heading-color: #3f3a64;
+  --heading-color: #000;
   --border-radius: 8px;
   --border-radius-full: 35px;
   --border-color: transparent;
@@ -9572,7 +9574,7 @@ a.text-dark:hover, a.text-dark:focus {
   --layer: rgba(0, 0, 0, 0.45); }
 
 [data-theme="dark"] {
-  --primary-color: #FE79A2;
+  --primary-color: #ffc107;
   --secondary-color: #1545CB;
   --font-color: #c2c2c2;
   --bg-color: #26243c;
@@ -9599,7 +9601,7 @@ html {
   padding: 0;
   background: var(--bg-color);
   color: var(--font-color);
-  font-family: 'Nunito', sans-serif; }
+  font-family: 'Lato', sans-serif; }
 
 body a,
 button,
@@ -10375,7 +10377,7 @@ a.login:hover {
 
 .w3l-main-slider .banner-info-bg h5 {
   color: #fff;
-  font-family: "Poppins", Sans-serif;
+  font-family: "Roboto", Sans-serif;
   font-size: 70px;
   font-weight: 300;
   line-height: 80px; }
