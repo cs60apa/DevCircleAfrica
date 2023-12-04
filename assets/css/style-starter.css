@@ -7100,7 +7100,7 @@ button.bg-dark:focus {
   color: #fff !important; }
 
 .text-primary {
-  color: #FE79A2 !important; }
+  color: #ffc107 !important; }
 
 a.text-primary:hover, a.text-primary:focus {
   color: #fd2d6d !important; }
@@ -12081,7 +12081,7 @@ h2.title {
   border-radius: 0.25rem; }
 
 .w3l-servicesblock .progress-bar {
-  background-color: var(--secondary-color);
+  background-color: #ffc107;
   transition: width 0.6s ease; }
 
 .w3l-servicesblock .progress-bar-striped {
