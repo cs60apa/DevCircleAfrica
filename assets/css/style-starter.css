@@ -7100,7 +7100,7 @@ button.bg-dark:focus {
   color: #fff !important; }
 
 .text-primary {
-  color: #FE79A2 !important; }
+  color: #ffc107 !important; }
 
 a.text-primary:hover, a.text-primary:focus {
   color: #fd2d6d !important; }
@@ -10591,7 +10591,7 @@ a.login:hover {
   position: absolute;
   top: 0;
   right: 0;
-  background: #8e43e7;
+  background: #ffc107;
   color: #fff;
   font-size: 13px;
   line-height: 1;
@@ -10602,7 +10602,7 @@ a.login:hover {
 
 .w3l-courses .course-price-badge:before {
   top: 0;
-  border-top: 19px solid #8e43e7;
+  border-top: 19px solid #ffc107;
   content: '';
   position: absolute;
   left: 0;
@@ -10612,7 +10612,7 @@ a.login:hover {
 
 .w3l-courses .course-price-badge:after {
   bottom: 0;
-  border-bottom: 19px solid #8e43e7;
+  border-bottom: 19px solid #ffc107;
   content: '';
   position: absolute;
   left: 0;
@@ -10624,7 +10624,7 @@ a.login:hover {
   position: absolute;
   top: 0;
   right: 0;
-  background: #ff4f81;
+  background: #ffc107;
   color: #fff;
   font-size: 13px;
   line-height: 1;
@@ -10635,7 +10635,7 @@ a.login:hover {
 
 .w3l-courses .course-price-badge-new:before {
   top: 0;
-  border-top: 19px solid #ff4f81;
+  border-top: 19px solid #ffc107;
   content: '';
   position: absolute;
   left: 0;
@@ -10645,7 +10645,7 @@ a.login:hover {
 
 .w3l-courses .course-price-badge-new:after {
   bottom: 0;
-  border-bottom: 19px solid #ff4f81;
+  border-bottom: 19px solid #ffc107;
   content: '';
   position: absolute;
   left: 0;
@@ -10700,7 +10700,7 @@ ul.rating-star li {
 
 ul.rating-star li span.fa {
   font-size: 14px;
-  color: var(--secondary-color); }
+  color: var(--primary-color); }
 
 .w3l-features {
   background: var(--bg-lightgrey); }
@@ -11436,7 +11436,7 @@ a.receipe {
   letter-spacing: .05em; }
 
 a.blue {
-  background: #7f87de; }
+  background: #ffc107; }
 
 .author {
   display: grid;
@@ -12081,7 +12081,7 @@ h2.title {
   border-radius: 0.25rem; }
 
 .w3l-servicesblock .progress-bar {
-  background-color: var(--secondary-color);
+  background-color: #ffc107;
   transition: width 0.6s ease; }
 
 .w3l-servicesblock .progress-bar-striped {
