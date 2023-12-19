@@ -1174,7 +1174,7 @@ pre {
     margin-left: 83.33333%; }
   .offset-xl-11 {
     margin-left: 91.66667%; } }
-
+    
 .table {
   width: 100%;
   margin-bottom: 1rem;
@@ -12331,6 +12331,29 @@ span.plus {
 /* /contact1 */
 
 /*# sourceMappingURL=style-starter.css.map */
+/* latest_blogs Sytles */
+.blog-post {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.container .mb-5 .row {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.container .mb-5 .row img {
+  border-radius: 8%;
+}
+.fade-out-text {
+ max-height: 85px;  /* Adjust as per your design */
+ overflow: hidden;
+ position: relative;
+}
 
 /* Customers page styles*/
 .customers {
