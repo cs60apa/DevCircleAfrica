@@ -136,11 +136,15 @@ Africa.com
 .custom-card p {
     font-size: 13px;
 }
+.custom-card img{
+    min-height: 180px;
+}
 .custom-card {
-    border: none;
+    border: 0;
     border-radius: 0;
     text-align: start;
     padding: 0;
+    border-radius: 8px 8px 0 0;
 }
 .custom-card .price-review p {
     color: #87690d;
@@ -150,9 +154,21 @@ Africa.com
 .custom-card button {
     background-color: #ffc107;
 }
-.custom-course-column {
-    margin: 1px;
+@media (max-width:766px) {
+    .custom-card img{
+        min-height: 300px;
+    }
 }
+@media (max-width:1030px){
+    .custom-card img{
+        max-height: 50px;
+    }
+}
+.below-card-img {
+    padding: 10px;
+    margin-top: 10px;
+}
+
      </style>
 
 <!-- End ads    -->
@@ -255,19 +271,16 @@ Africa.com
         </svg>
     </div>
 </section>
-
-
-<!---->
-<div class="container mt-5">
-<!-- Course Categories -->
-  <h3 class="title-big text-left mb-sm-5 mb-4">Trending Courses</h3>
-  <div class="row my-4">
+<section>
+    <div class="container py-lg-5 py-md-4 py-2 ">
+        <h3 class="title-big text-left mb-sm-5 mb-4">Trending Courses</h3>
+  <div class="row">
     <!-- Example Category Card -->
-    <div class="col-md-4 custom-course-column">
-        <div class="card custom-card" style="width: 12rem; height: 250px;">
+    <div class="col-lg-3 col-md-6 col-sm-12 custom-course-column mb-1">
+        <div class="card custom-card item" style="width: 100%;">
             <img class="card-img-top" src="assets/images/tech.jpg" alt="Card image cap" height="100px">
-            <div>
-              <h5>Python Masterclass: A complete guide...</h5>
+            <div class="below-card-img">
+              <a href="#"><h5>Python Masterclass: A complete guide...</h5></a>
               <p>Sir David Promise @DevCircle</p>
               <div>
                   <div class="price-review d-flex">
@@ -286,11 +299,13 @@ Africa.com
             </div>
         </div>
     </div>
-    <div class="col-md-4 custom-course-column">
-        <div class="card custom-card" style="width: 12rem; height: 250px;">
+
+
+    <div class="col-lg-3 col-md-6 col-sm-12 custom-course-column mb-1">
+        <div class="card custom-card" style="width: 100%;">
             <img class="card-img-top" src="assets/images/tech1.jpeg" alt="Card image cap" height="100px">
-            <div >
-              <h5>Python Masterclass: A complete guide...</h5>
+            <div class="below-card-img">
+              <h5><a href="#">Python Masterclass: A complete guide...</a></h5>
               <p>Sir David Promise @DevCircle</p>
               <div>
                   <div class="price-review d-flex">
@@ -309,11 +324,11 @@ Africa.com
             </div>
         </div>
     </div>
-    <div class="col-md-4 custom-course-column">
-        <div class="card custom-card" style="width: 12rem; height: 250px;">
+    <div class="col-lg-3 col-md-6 col-sm-12 custom-course-column mb-1">
+        <div class="card custom-card" style="width: 100%;">
             <img class="card-img-top" src="assets/images/tech2.jpg" alt="Card image cap" height="100px">
-            <div >
-              <h5>Python Masterclass: A complete guide...</h5>
+            <div class="below-card-img">
+              <h5><a href="#">Python Masterclass: A complete guide...</a></h5>
               <p>Sir David Promise @DevCircle</p>
               <div>
                   <div class="price-review d-flex">
@@ -332,34 +347,11 @@ Africa.com
             </div>
         </div>
     </div>
-    <div class="col-lg-3 col-md-6 col-sm-10 col-xl-2 custom-course-column">
-        <div class="card custom-card" style="width: 12rem; height: 250px;">
+    <div class="col-lg-3 col-md-6 col-sm-12 custom-course-column">
+        <div class="card custom-card" style="width: 100%;">
             <img class="card-img-top" src="assets/images/tech3.webp" alt="Card image cap" height="100px">
-            <div>
-              <h5>Python Masterclass: A complete guide...</h5>
-              <p>Sir David Promise @DevCircle</p>
-              <div>
-                  <div class="price-review d-flex">
-                      <p>4.7</p>
-                      <ul class="rating-star">
-                          <li><span class="fa fa-star"></span></li>
-                          <li><span class="fa fa-star"></span></li>
-                          <li><span class="fa fa-star"></span></li>
-                          <li><span class="fa fa-star"></span></li>
-                          <li><span class="fa fa-star-o"></span></li>
-                      </ul>
-                      (60,000)
-                  </div>
-                  <div>$48.00</div>
-              </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-3 col-xl-2 col-md-6 col-sm-10 custom-course-column">
-        <div class="card custom-card" style="width: 12rem; height: 250px;">
-            <img class="card-img-top" src="assets/images/tech4.webp" alt="Card image cap" height="100px">
-            <div>
-              <h5>Python Masterclass: A complete guide...</h5>
+            <div class="below-card-img">
+              <h5><a href="#">Python Masterclass: A complete guide...</a></h5>
               <p>Sir David Promise @DevCircle</p>
               <div>
                   <div class="price-review d-flex">
@@ -380,7 +372,116 @@ Africa.com
     </div>
    <!-- Add more category cards as needed -->
 </div>
+<div class="row pt-4">
+    <div class="col-lg-3 col-md-6 col-sm-12 custom-course-column">
+        <div class="card custom-card" style="width: 100%;">
+            <img class="card-img-top" src="assets/images/tech4.webp" alt="Card image cap" height="100px">
+            <div class="below-card-img">
+              <h5><a href="#">Python Masterclass: A complete guide...</a></h5>
+              <p>Sir David Promise @DevCircle</p>
+              <div>
+                  <div class="price-review d-flex">
+                      <p>4.7</p>
+                      <ul class="rating-star">
+                          <li><span class="fa fa-star"></span></li>
+                          <li><span class="fa fa-star"></span></li>
+                          <li><span class="fa fa-star"></span></li>
+                          <li><span class="fa fa-star"></span></li>
+                          <li><span class="fa fa-star-o"></span></li>
+                      </ul>
+                      (60,000)
+                  </div>
+                  <div>$48.00</div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12 custom-course-column mb-1">
+        <div class="card custom-card" style="width: 100%;">
+            <img class="card-img-top" src="assets/images/tech.jpg" alt="Card image cap" height="100px">
+            <div class="below-card-img">
+              <h5><a href="#">Python Masterclass: A complete guide...</a></h5>
+              <p>Sir David Promise @DevCircle</p>
+              <div>
+                  <div class="price-review d-flex">
+                      <p>4.7</p>
+                      <ul class="rating-star">
+                          <li><span class="fa fa-star"></span></li>
+                          <li><span class="fa fa-star"></span></li>
+                          <li><span class="fa fa-star"></span></li>
+                          <li><span class="fa fa-star"></span></li>
+                          <li><span class="fa fa-star-o"></span></li>
+                      </ul>
+                      (60,000)
+                  </div>
+                  <div>$48.00</div>
+              </div>
+            </div>
+        </div>
+    </div>
 
+
+    <div class="col-lg-3 col-md-6 col-sm-12 custom-course-column mb-1">
+        <div class="card custom-card" style="width: 100%;">
+            <img class="card-img-top" src="assets/images/tech1.jpeg" alt="Card image cap" height="100px">
+            <div class="below-card-img">
+              <h5><a href="#">Python Masterclass: A complete guide...</a></h5>
+              <p>Sir David Promise @DevCircle</p>
+              <div>
+                  <div class="price-review d-flex">
+                      <p>4.7</p>
+                      <ul class="rating-star">
+                          <li><span class="fa fa-star"></span></li>
+                          <li><span class="fa fa-star"></span></li>
+                          <li><span class="fa fa-star"></span></li>
+                          <li><span class="fa fa-star"></span></li>
+                          <li><span class="fa fa-star-o"></span></li>
+                      </ul>
+                      (60,000)
+                  </div>
+                  <div>$48.00</div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12 custom-course-column">
+        <div class="card custom-card" style="width: 100%;">
+            <img class="card-img-top" src="assets/images/tech2.jpg" alt="Card image cap" height="100px">
+            <div class="below-card-img">
+              <h5><a href="#">Python Masterclass: A complete guide...</a></h5>
+              <p>Sir David Promise @DevCircle</p>
+              <div>
+                  <div class="price-review d-flex">
+                      <p>4.7</p>
+                      <ul class="rating-star">
+                          <li><span class="fa fa-star"></span></li>
+                          <li><span class="fa fa-star"></span></li>
+                          <li><span class="fa fa-star"></span></li>
+                          <li><span class="fa fa-star"></span></li>
+                          <li><span class="fa fa-star-o"></span></li>
+                      </ul>
+                      (60,000)
+                  </div>
+                  <div>$48.00</div>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+<!---->
+<div class="container py-lg-5 py-md-4">
+<!-- Course Categories -->
   <!-- Featured Courses -->
   <section class="w3l-courses">
     <div class="blog pb-5" id="courses">
@@ -941,8 +1042,13 @@ Africa.com
 </div>
 
 </div>
+</section>
 
 
+<section class="trending">
+    <div class="container-fluid">
+
+    </div>
 </section>
 
 <!-- footer -->
