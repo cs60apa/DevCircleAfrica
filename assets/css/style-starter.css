@@ -11837,7 +11837,7 @@ h2.title {
   color: #eee; }
 
 .breadcrumb-bg-about {
-  background: url(../images/banner1.jpg) no-repeat center;
+  background: url(../images/c1.jpg) no-repeat center;
   background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
@@ -12396,5 +12396,11 @@ span.plus {
       font-weight: bold;
       margin: 0;
       padding: 20px;
-      z-index: 1;      
+      z-index: 1;
+  }
+  .custom-card {
+    background-color: var(--bg-lightgrey);
+    border: 0.5px solid lightgray;
+    border: 0.5px solid var(--bg-grey);
+
   }
