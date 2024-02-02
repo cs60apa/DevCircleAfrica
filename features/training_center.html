@@ -19,6 +19,7 @@ Africa.com
 
     <title>DevCircle Africa</title>
     <link rel="icon" type="image/x-icon" href="../assets/images/icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <!-- google fonts -->
     <link href="//fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
@@ -175,6 +176,33 @@ Africa.com
     padding: 10px;
 }
 
+ .cards-row {
+    height: auto;
+ }
+ .carousel-indicators {
+    bottom: -50px;
+ }
+ .carousel-indicators li {
+  background-color: #e3a957;
+  height: 5px;
+  width: 40px;
+}
+
+.carousel-indicators .active {
+  background-color: #e08709; /* Change to your desired active indicator color */
+  height: 5px; /* Change to your desired active indicator border color */
+}
+/* CSS for image zoom on hover */
+.card-img-top {
+  transition: transform 0.3s ease-in-out; /* Add smooth transition effect */
+}
+
+.card-img-top:hover {
+  transform: scale(1.2); /* Adjust the scaling factor as needed */
+}
+.custom-card {
+  overflow: hidden; /* Clip overflow content */
+}
      </style>
 
 <!-- End ads    -->
@@ -278,203 +306,232 @@ Africa.com
     </div>
 </section>
 <section>
-    <div class="container py-lg-5 py-md-4 py-2 ">
+    <div class="container py-lg-2 py-md-3 py-5">
         <h3 class="title-big text-left mb-sm-5 mb-4">Trending Courses</h3>
+
+
   <div class="row justify-content-center">
-    <!-- Example Category Card -->
-    <div class="col-lg-3 col-md-6 col-sm-12 custom-course-column mb-1">
-        <div class="card custom-card item" style="width: 100%;">
-            <img class="card-img-top" src="../assets/images/tech.jpg" alt="Card image cap" height="100px">
-            <div class="below-card-img">
-              <h5><a href="#">Python Masterclass: A complete guide...</a></h5>
-              <p>Sir David Promise @DevCircle</p>
-              <div>
-                  <div class="price-review d-flex">
-                      <p>4.7</p>
-                      <ul class="rating-star">
-                          <li><span class="fa fa-star"></span></li>
-                          <li><span class="fa fa-star"></span></li>
-                          <li><span class="fa fa-star"></span></li>
-                          <li><span class="fa fa-star"></span></li>
-                          <li><span class="fa fa-star-o"></span></li>
-                      </ul>
-                      (60,000)
-                  </div>
-                  <div>$48.00</div>
-              </div>
-            </div>
-        </div>
-    </div>
 
 
-    <div class="col-lg-3 col-md-6 col-sm-12 custom-course-column mb-1">
-        <div class="card custom-card" style="width: 100%;">
-            <img class="card-img-top" src="../assets/images/tech1.jpeg" alt="Card image cap" height="100px">
-            <div class="below-card-img">
-              <h5><a href="#">Python Masterclass: A complete guide...</a></h5>
-              <p>Sir David Promise @DevCircle</p>
-              <div>
-                  <div class="price-review d-flex">
-                      <p>4.7</p>
-                      <ul class="rating-star">
-                          <li><span class="fa fa-star"></span></li>
-                          <li><span class="fa fa-star"></span></li>
-                          <li><span class="fa fa-star"></span></li>
-                          <li><span class="fa fa-star"></span></li>
-                          <li><span class="fa fa-star-o"></span></li>
-                      </ul>
-                      (60,000)
-                  </div>
-                  <div>$48.00</div>
-              </div>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row cards-row">
+              <div class="col-lg-3 col-md-6 col-sm-12 custom-course-column mb-1">
+                <div class="card custom-card item" style="width: 100%;">
+                    <img class="card-img-top" src="../assets/images/tech.jpg" alt="Card image cap" height="100px">
+                    <div class="below-card-img">
+                      <h5><a href="#">Python Masterclass: A complete guide...</a></h5>
+                      <p>Sir David Promise @DevCircle</p>
+                      <div>
+                          <div class="price-review d-flex">
+                              <p>4.7</p>
+                              <ul class="rating-star">
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star-o"></span></li>
+                              </ul>
+                              (60,000)
+                          </div>
+                          <div>$48.00</div>
+                      </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="col-lg-3 col-md-6 col-sm-12 custom-course-column mb-1">
-        <div class="card custom-card" style="width: 100%;">
-            <img class="card-img-top" src="../assets/images/tech2.jpg" alt="Card image cap" height="100px">
-            <div class="below-card-img">
-              <h5><a href="#">Python Masterclass: A complete guide...</a></h5>
-              <p>Sir David Promise @DevCircle</p>
-              <div>
-                  <div class="price-review d-flex">
-                      <p>4.7</p>
-                      <ul class="rating-star">
-                          <li><span class="fa fa-star"></span></li>
-                          <li><span class="fa fa-star"></span></li>
-                          <li><span class="fa fa-star"></span></li>
-                          <li><span class="fa fa-star"></span></li>
-                          <li><span class="fa fa-star-o"></span></li>
-                      </ul>
-                      (60,000)
-                  </div>
-                  <div>$48.00</div>
-              </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-3 col-md-6 col-sm-12 custom-course-column">
-        <div class="card custom-card" style="width: 100%;">
-            <img class="card-img-top" src="../assets/images/tech3.webp" alt="Card image cap" height="100px">
-            <div class="below-card-img">
-              <h5><a href="#">Python Masterclass: A complete guide...</a></h5>
-              <p>Sir David Promise @DevCircle</p>
-              <div>
-                  <div class="price-review d-flex">
-                      <p>4.7</p>
-                      <ul class="rating-star">
-                          <li><span class="fa fa-star"></span></li>
-                          <li><span class="fa fa-star"></span></li>
-                          <li><span class="fa fa-star"></span></li>
-                          <li><span class="fa fa-star"></span></li>
-                          <li><span class="fa fa-star-o"></span></li>
-                      </ul>
-                      (60,000)
-                  </div>
-                  <div>$48.00</div>
-              </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-3 col-md-6 col-sm-12 custom-course-column">
-        <div class="card custom-card" style="width: 100%;">
-            <img class="card-img-top" src="../assets/images/tech4.webp" alt="Card image cap" height="100px">
-            <div class="below-card-img">
-              <h5><a href="#">Python Masterclass: A complete guide...</a></h5>
-              <p>Sir David Promise @DevCircle</p>
-              <div>
-                  <div class="price-review d-flex">
-                      <p>4.7</p>
-                      <ul class="rating-star">
-                          <li><span class="fa fa-star"></span></li>
-                          <li><span class="fa fa-star"></span></li>
-                          <li><span class="fa fa-star"></span></li>
-                          <li><span class="fa fa-star"></span></li>
-                          <li><span class="fa fa-star-o"></span></li>
-                      </ul>
-                      (60,000)
-                  </div>
-                  <div>$48.00</div>
-              </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-3 col-md-6 col-sm-12 custom-course-column mb-1">
-        <div class="card custom-card" style="width: 100%;">
-            <img class="card-img-top" src="../assets/images/tech.jpg" alt="Card image cap" height="100px">
-            <div class="below-card-img">
-              <h5><a href="#">Python Masterclass: A complete guide...</a></h5>
-              <p>Sir David Promise @DevCircle</p>
-              <div>
-                  <div class="price-review d-flex">
-                      <p>4.7</p>
-                      <ul class="rating-star">
-                          <li><span class="fa fa-star"></span></li>
-                          <li><span class="fa fa-star"></span></li>
-                          <li><span class="fa fa-star"></span></li>
-                          <li><span class="fa fa-star"></span></li>
-                          <li><span class="fa fa-star-o"></span></li>
-                      </ul>
-                      (60,000)
-                  </div>
-                  <div>$48.00</div>
-              </div>
-            </div>
-        </div>
-    </div>
 
 
-    <div class="col-lg-3 col-md-6 col-sm-12 custom-course-column mb-1">
-        <div class="card custom-card" style="width: 100%;">
-            <img class="card-img-top" src="../assets/images/tech1.jpeg" alt="Card image cap" height="100px">
-            <div class="below-card-img">
-              <h5><a href="#">Python Masterclass: A complete guide...</a></h5>
-              <p>Sir David Promise @DevCircle</p>
-              <div>
-                  <div class="price-review d-flex">
-                      <p>4.7</p>
-                      <ul class="rating-star">
-                          <li><span class="fa fa-star"></span></li>
-                          <li><span class="fa fa-star"></span></li>
-                          <li><span class="fa fa-star"></span></li>
-                          <li><span class="fa fa-star"></span></li>
-                          <li><span class="fa fa-star-o"></span></li>
-                      </ul>
-                      (60,000)
-                  </div>
-                  <div>$48.00</div>
-              </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 custom-course-column mb-1">
+                <div class="card custom-card" style="width: 100%;">
+                    <img class="card-img-top" src="../assets/images/tech1.jpeg" alt="Card image cap" height="100px">
+                    <div class="below-card-img">
+                      <h5><a href="#">Python Masterclass: A complete guide...</a></h5>
+                      <p>Sir David Promise @DevCircle</p>
+                      <div>
+                          <div class="price-review d-flex">
+                              <p>4.7</p>
+                              <ul class="rating-star">
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star-o"></span></li>
+                              </ul>
+                              (60,000)
+                          </div>
+                          <div>$48.00</div>
+                      </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="col-lg-3 col-md-6 col-sm-12 custom-course-column">
-        <div class="card custom-card" style="width: 100%;">
-            <img class="card-img-top" src="../assets/images/tech2.jpg" alt="Card image cap" height="100px">
-            <div class="below-card-img">
-              <h5><a href="#">Python Masterclass: A complete guide...</a></h5>
-              <p>Sir David Promise @DevCircle</p>
-              <div>
-                  <div class="price-review d-flex">
-                      <p>4.7</p>
-                      <ul class="rating-star">
-                          <li><span class="fa fa-star"></span></li>
-                          <li><span class="fa fa-star"></span></li>
-                          <li><span class="fa fa-star"></span></li>
-                          <li><span class="fa fa-star"></span></li>
-                          <li><span class="fa fa-star-o"></span></li>
-                      </ul>
-                      (60,000)
-                  </div>
-                  <div>$48.00</div>
-              </div>
-            </div>
-        </div>
-    </div>
-   <!-- Add more category cards as needed -->
-</div>
 
-<div class="row pt-4">
-    
+            <div class="col-lg-3 col-md-6 col-sm-12 custom-course-column mb-1">
+                <div class="card custom-card" style="width: 100%;">
+                    <img class="card-img-top" src="../assets/images/tech2.jpg" alt="Card image cap" height="100px">
+                    <div class="below-card-img">
+                      <h5><a href="#">Python Masterclass: A complete guide...</a></h5>
+                      <p>Sir David Promise @DevCircle</p>
+                      <div>
+                          <div class="price-review d-flex">
+                              <p>4.7</p>
+                              <ul class="rating-star">
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star-o"></span></li>
+                              </ul>
+                              (60,000)
+                          </div>
+                          <div>$48.00</div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12 custom-course-column">
+                <div class="card custom-card" style="width: 100%;">
+                    <img class="card-img-top" src="../assets/images/tech3.webp" alt="Card image cap" height="100px">
+                    <div class="below-card-img">
+                      <h5><a href="#">Python Masterclass: A complete guide...</a></h5>
+                      <p>Sir David Promise @DevCircle</p>
+                      <div>
+                          <div class="price-review d-flex">
+                              <p>4.7</p>
+                              <ul class="rating-star">
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star-o"></span></li>
+                              </ul>
+                              (60,000)
+                          </div>
+                          <div>$48.00</div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+
+            <div class="row cards-row">
+
+              <div class="col-lg-3 col-md-6 col-sm-12 custom-course-column">
+                <div class="card custom-card" style="width: 100%;">
+                    <img class="card-img-top" src="../assets/images/tech4.webp" alt="Card image cap" height="100px">
+                    <div class="below-card-img">
+                      <h5><a href="#">Python Masterclass: A complete guide...</a></h5>
+                      <p>Sir David Promise @DevCircle</p>
+                      <div>
+                          <div class="price-review d-flex">
+                              <p>4.7</p>
+                              <ul class="rating-star">
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star-o"></span></li>
+                              </ul>
+                              (60,000)
+                          </div>
+                          <div>$48.00</div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12 custom-course-column mb-1">
+                <div class="card custom-card" style="width: 100%;">
+                    <img class="card-img-top" src="../assets/images/tech.jpg" alt="Card image cap" height="100px">
+                    <div class="below-card-img">
+                      <h5><a href="#">Python Masterclass: A complete guide...</a></h5>
+                      <p>Sir David Promise @DevCircle</p>
+                      <div>
+                          <div class="price-review d-flex">
+                              <p>4.7</p>
+                              <ul class="rating-star">
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star-o"></span></li>
+                              </ul>
+                              (60,000)
+                          </div>
+                          <div>$48.00</div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6 col-sm-12 custom-course-column mb-1">
+                <div class="card custom-card" style="width: 100%;">
+                    <img class="card-img-top" src="../assets/images/tech1.jpeg" alt="Card image cap" height="100px">
+                    <div class="below-card-img">
+                      <h5><a href="#">Python Masterclass: A complete guide...</a></h5>
+                      <p>Sir David Promise @DevCircle</p>
+                      <div>
+                          <div class="price-review d-flex">
+                              <p>4.7</p>
+                              <ul class="rating-star">
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star-o"></span></li>
+                              </ul>
+                              (60,000)
+                          </div>
+                          <div>$48.00</div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 custom-course-column">
+                <div class="card custom-card" style="width: 100%;">
+                    <img class="card-img-top" src="../assets/images/tech2.jpg" alt="Card image cap" height="100px">
+                    <div class="below-card-img">
+                      <h5><a href="#">Python Masterclass: A complete guide...</a></h5>
+                      <p>Sir David Promise @DevCircle</p>
+                      <div>
+                          <div class="price-review d-flex">
+                              <p>4.7</p>
+                              <ul class="rating-star">
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star-o"></span></li>
+                              </ul>
+                              (60,000)
+                          </div>
+                          <div>$48.00</div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+          </div>
+          
+        </div>
+
+        
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
 </div>
     </div>
 </section>
@@ -1063,7 +1120,7 @@ Africa.com
             <h6 class="footer-title-29">Company</h6>
             <li><a href="../about.html">About company</a></li>
             <li><a href="./latest_blogs.html"> Latest Blog posts</a></li>
-            <li><a href="#teacher"> Became a teacher </a></li>
+            <li><a href="#teacher"> Become a teacher </a></li>
             <li><a href="./courses.html">Online Courses</a></li>
             <li><a href="../contact.html">Get in touch</a></li>
           </ul>
