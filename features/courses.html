@@ -5,7 +5,6 @@ Author URL: http://DevCircleAfrica.com
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="keywords" content="Software Engineering, Programming Web Development, Otofast Music, LeefCode, Forum DevCircleAfrica, Forum LeefCode, Content Writing, Graphic Designing, SEO, Digital Marketing in Zambia, Blogging, Upwork, Freelancing and Remote works">
@@ -15,25 +14,22 @@ Author URL: http://DevCircleAfrica.com
     <meta name="author" content="Mark Sikaundi">
     <meta name="title" content="DevCircle Africa">
     <meta name="page" content="Courses">
-    <!-- <meta http-equiv="refresh" content="5"> -->
     <link rel="icon" type="image/x-icon" href="../assets/images/icon.png">
 
 
     <title> DevCircle Africa</title>
 
-    <!-- google fonts -->
+
     <link href="//fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
     <link href="//fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    
-    <!-- Template CSS -->
+
     <link rel="stylesheet" href="../assets/css/style-starter.css">
 
-    <!--   ads   -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5141290108997002"
      crossorigin="anonymous"></script>
-<!-- End ads    -->
+
  <style>
-    .carousel-inner{
+    .custom-carousel-inner{
         position: relative;
     }
   .pagination-wrapper {
@@ -46,7 +42,7 @@ Author URL: http://DevCircleAfrica.com
  </style>
   </head>
   <body>
-<!--header-->
+
 <header id="site-header" class="fixed-top">
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-dark stroke">
@@ -125,8 +121,7 @@ Author URL: http://DevCircleAfrica.com
     </nav>
   </div>
 </header>
-<!--/header-->
-<!-- about breadcrumb -->
+
 <section class="w3l-breadcrumb">
     <div class="breadcrumb-bg breadcrumb-bg-about py-5">
         <div class="container pt-lg-5 pt-3 p-lg-4 pb-3">
@@ -143,9 +138,9 @@ Author URL: http://DevCircleAfrica.com
         </svg>
     </div>
 </section>
-<!-- //about breadcrumb -->
-<div id="myCarousel" class="carousel slide">
-  <div class="carousel-inner">
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+  <div class="carousel-inner custom-carousel-inner">
     <div class="carousel-item active">
 
       <section class="w3l-courses">
@@ -1079,21 +1074,21 @@ Author URL: http://DevCircleAfrica.com
           </div>
         </section>
     </div>
-    <!-- pagination -->
+
     <div class="pagination-wrapper mt-5 pt-lg-3 text-center">
     <ul class="page-pagination">
-        <li><a class="next" href="#myCarousel" role="button" data-slide="prev"><span class="fa fa-angle-left"></span> Prev</a></li>
+        <li><a class="next" href="#myCarousel" role="button" data-slide="prev" id="prevBtn"><span class="fa fa-angle-left"></span> Prev</a></li>
         <li ><a id="btn1" aria-current="page" class="page-numbers current" data-target="#myCarousel" data-slide-to="0">1</a></li>
         <li ><a id="btn2" class="page-numbers" data-target="#myCarousel" data-slide-to="1">2</a></li>
         <li ><a id="btn3" class="page-numbers" data-target="#myCarousel" data-slide-to="2">3</a></li>
         <li><a class="page-numbers" href="#url">....</a></li>
-        <li><a class="next" href="#myCarousel" role="button" data-slide="next">Next <span class="fa fa-angle-right"></span></a></li>
+        <li><a class="next" href="#myCarousel" role="button" data-slide="next" id="nextBtn">Next <span class="fa fa-angle-right"></span></a></li>
     </ul>
   </div>
   </div>
 </div>
 
-<!-- footer -->
+
 <section class="w3l-footer-29-main">
   <div class="footer-29 py-5">
     <div class="container py-md-4">
@@ -1171,7 +1166,6 @@ Author URL: http://DevCircleAfrica.com
   </section>
   <!-- //copyright -->
 </section>
-<!-- //footer -->
 
 <script src="../assets/js/jquery-3.3.1.min.js"></script>
 
@@ -1215,7 +1209,6 @@ Author URL: http://DevCircleAfrica.com
     })
   })
 </script>
-<!-- //script -->
 
 <script>
   $(document).ready(function () {
@@ -1242,6 +1235,7 @@ Author URL: http://DevCircleAfrica.com
       })
   })
 </script>
+
 <!-- //script for tesimonials carousel slider -->
 
 <script>
@@ -1277,12 +1271,15 @@ Author URL: http://DevCircleAfrica.com
     });
   });
 
-  let btn1 = document.getElementById("btn1");
+let btn1 = document.getElementById("btn1");
 let btn2 = document.getElementById("btn2");
 let btn3 = document.getElementById("btn3");
-let btn1Active = false;
+let nextBtn = document.getElementById("nextBtn");
+let prevBtn = document.getElementById("prevBtn");
+let btn1Active = true;
 let btn2Active = false;
 let btn3Active = false;
+updateButtonStyles();
 
 btn1.addEventListener('click', function(){
   btn1Active = true;
@@ -1305,12 +1302,43 @@ btn3.addEventListener('click', function(){
   updateButtonStyles();
 });
 
+nextBtn.addEventListener('click', function(){
+    if(btn1Active){
+      btn1Active = false;
+      btn2Active = true;
+      btn3Active = false;
+      updateButtonStyles();
+    } else if(btn2Active){
+        btn1Active = false;
+        btn2Active = false;
+        btn3Active = true;
+        updateButtonStyles();
+    }
+});
+
+prevBtn.addEventListener('click', function(){
+    if(btn3Active){
+      btn1Active = false;
+      btn2Active = true;
+      btn3Active = false;
+      updateButtonStyles();
+    }
+    else if(btn2Active){
+      btn1Active = true;
+      btn2Active = false;
+      btn3Active = false;
+      updateButtonStyles();
+    }
+})
+
+
+
 function updateButtonStyles() {
   if (btn1Active) {
     btn1.style.color = 'white';
     btn1.style.backgroundColor = '#ffc107';
   } else {
-    btn1.style.color = ''; // Reset to default styles
+    btn1.style.color = '';
     btn1.style.backgroundColor = '';
   }
 
@@ -1318,7 +1346,7 @@ function updateButtonStyles() {
     btn2.style.color = 'white';
     btn2.style.backgroundColor = '#ffc107';
   } else {
-    btn2.style.color = ''; // Reset to default styles
+    btn2.style.color = '';
     btn2.style.backgroundColor = '';
   }
 
@@ -1326,7 +1354,7 @@ function updateButtonStyles() {
     btn3.style.color = 'white';
     btn3.style.backgroundColor = '#ffc107';
   } else {
-    btn3.style.color = ''; // Reset to default styles
+    btn3.style.color = '';
     btn3.style.backgroundColor = '';
   }
 }
