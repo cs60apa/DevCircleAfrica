@@ -12404,3 +12404,23 @@ span.plus {
     border: 0.5px solid var(--bg-grey);
 
   }
+  .custom-carousel-inner{
+    position: relative;
+}
+.pagination-wrapper {
+padding-bottom: 20px;
+position: absolute;
+left: 0;
+right: 0;
+bottom: 2px;
+}
+
+/*Error page styles*/
+.main_cont {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.main_cont button a{
+  color: black;
+}
