@@ -11168,6 +11168,9 @@ ul.rating-star li span.fa {
     line-height: 28px; } }
 
 /* //middle */
+.w3l-team {
+  background: var(--bg-lightgrey);
+}
 .w3l-team .box16 {
   text-align: center;
   color: #fff;
@@ -12424,3 +12427,4 @@ bottom: 2px;
 .main_cont button a{
   color: black;
 }
+
