@@ -42,6 +42,125 @@ Author URL: http://DevCircleAfrica.com
     right: 0;
     bottom: 2px;
   }
+  .form-group {
+    border: 1px solid grey;
+    display: inline-flex;
+    padding: 1px;
+    border-radius: 4px;
+  }
+  select{
+    border: none;
+  }
+  .custom-card h5 {
+            font-size: 13px;
+            font-weight: bold;
+            margin-top: 8px;
+            padding-left: 0;
+        }
+
+        .custom-card p {
+            font-size: 13px;
+        }
+
+        .custom-card img {
+            min-height: 180px;
+        }
+
+        .custom-card {
+            border: 0;
+            border-radius: 0;
+            text-align: start;
+            padding: 0;
+            border-radius: 8px 8px 0 0;
+            min-width: 250px;
+        }
+
+        .custom-card .price-review p {
+            color: #87690d;
+            font-weight: bolder;
+            margin-right: 5px;
+        }
+
+        .custom-card button {
+            background-color: #ffc107;
+        }
+
+        @media (max-width:766px) {
+            .custom-card img {
+                min-height: 300px;
+            }
+        }
+
+        @media (max-width:1030px) {
+            .custom-card img {
+                max-height: 50px;
+            }
+        }
+
+        .below-card-img {
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        .custom-course-column {
+            break-inside: avoid;
+            /* or avoid-column to prevent breaking within columns */
+            margin-bottom: 20px;
+            /* Adjust the margin as needed */
+            padding: 10px;
+        }
+
+        .cards-row {
+            height: auto;
+        }
+
+        .carousel-indicators {
+            bottom: -50px;
+        }
+
+        .carousel-indicators li {
+            background-color: #e3a957;
+            height: 5px;
+            width: 40px;
+        }
+
+        .carousel-indicators .active {
+            background-color: #e08709;
+            /* Change to your desired active indicator color */
+            height: 5px;
+            /* Change to your desired active indicator border color */
+        }
+
+        /* CSS for image zoom on hover */
+        .card-img-top {
+            transition: transform 0.3s ease-in-out;
+            /* Add smooth transition effect */
+        }
+
+        .card-img-top:hover {
+            transform: scale(1.2);
+            /* Adjust the scaling factor as needed */
+        }
+
+        .custom-card {
+            overflow: hidden;
+            /* Clip overflow content */
+        }
+        .custom-card-1{
+            background-color: #fff;
+            height: 220px;
+            border: none;
+        }
+        .custom-card-1 img{
+            margin-left: 30%;
+            margin-top: 30px;
+        }
+        .recommends-sect {
+            background-color: #ffffff;
+        }
+        .categories-sect {
+            background-color: #f8f9fa;
+        }
  </style>
   </head>
   <body>
@@ -142,10 +261,36 @@ Author URL: http://DevCircleAfrica.com
     </div>
 </section>
 
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h3 class="custom-3 title-big mb-sm-5">Featured Online <span>Courses</span></h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 col-lg-10">
+            <h5 class="custom-5 title-small ">Find your ideal program</h5>
+        </div>
+        <div class="col ml-4">
+            <div class="form-group small">
+                <select id="programSelect">
+                    <option value="option1">All Categories</option>
+                    <option value="option2">Programming</option>
+                    <option value="option3">Cloud Computing</option>
+                    <option value="option5">Deep Learning</option>
+                </select>
+                <div class="arrow-wrapper" onclick="toggleSelectDropdown()">
+                    <img src="https://cdn-icons-png.flaticon.com/512/10017/10017905.png" width="30px">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
 <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
   <div class="carousel-inner custom-carousel-inner">
     <div class="carousel-item active">
-
       <section class="w3l-courses">
         <div class="blog pb-5" id="courses">
             <div class="container py-lg-5 py-md-4 py-5">
@@ -1090,6 +1235,57 @@ Author URL: http://DevCircleAfrica.com
   </div>
   </div>
 </div>
+<section class="categories-sect pb-5 w-100">
+    <div class="container mt-5 ">
+        <div class="row">
+            <div class="col">
+              <h4 class="custom-3 title-big mb-sm-5 text-center pt-4">Trennding <span>Categories</span></h4>
+              <h5 class="custom-5 title-small text-center">Students are looking at this!</h5>
+            </div>
+        </div>
+        <div class="row cards-row mt-5">
+            <div class="col-lg-3 col-md-6 col-sm-12 custom-course-column mb-1">
+                <div class="card custom-card-1 item" style="width: 100%;">
+                    <img src="https://cdn-icons-png.flaticon.com/256/3942/3942472.png" alt="" width="100px">
+                    <h5 class="custom-5 title-small text-center mt-3">Cloud Computing</h5>
+                    <p class="text-center small mb-2">Over 25 Courses</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 custom-course-column mb-1">
+                <div class="card custom-card-1" style="width: 100%;">
+                    <img src="https://cdn-icons-png.freepik.com/512/1118/1118922.png" alt="" width="100px">
+                    <h5 class="custom-5 title-small text-center mt-3">Programming</h5>
+                    <p class="text-center small">Over 40 Courses</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 custom-course-column mb-1">
+                <div class="card custom-card-1 item" width="">
+                    <img src="../assets/images/deeplearning.png" alt="" width="100px">
+                    <h5 class="custom-5 title-small text-center mt-3">Deep Learning</h5>
+                    <p class="text-center small">Over 15 Courses</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 custom-course-column mb-1">
+                <div class="card custom-card-1 item" style="width: 100%;">
+                    <img src="../assets/images/bloggingIcon.png" alt="" width="100px">
+                    <h5 class="custom-5 title-small text-center mt-3">Blogging</h5>
+                    <p class="text-center small">Over 20 Courses</p>
+                </div>
+            </div>
+    </div>
+</section>
+<section class="mt-5 mb-5">
+    <div class="container recommends-sect">
+        <div class="row">
+            <div class="col text-center pt-4"> <!-- Center the content -->
+                <h4 class="custom-3 title-big mb-sm-5">Get Personal Learning Recommendations</h4>
+                <h5 class="custom-5 title-small">Enhance Your Skills With Leading Online Courses</h5>
+                <a href="#url" class="btn btn-primary btn-style mt-md-5 mt-4 mb-4">Get Started Now</a> <!-- Added bottom margin -->
+            </div>
+        </div>
+    </div>
+</section>
+
 
 
 <section class="w3l-footer-29-main">
@@ -1362,13 +1558,18 @@ function updateButtonStyles() {
   }
 }
 
-
 </script>
 <!--//MENU-JS-->
 
 <script src="/..assets/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script>
+    let selectItem = document.getElementById("programSelect");
+    function toggleSelectDropdown(){
+            selectItem.focus();
+    }
+</script>
 
 
 </body>
