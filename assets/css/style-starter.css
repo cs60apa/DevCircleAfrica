@@ -6076,7 +6076,7 @@ button.bg-dark:focus {
     margin-right: 3rem !important; }
   .mb-sm-5,
   .my-sm-5 {
-    margin-bottom: 3rem !important; }
+    margin-bottom: 1rem !important; }
   .ml-sm-5,
   .mx-sm-5 {
     margin-left: 3rem !important; }
@@ -12428,3 +12428,152 @@ bottom: 2px;
   color: black;
 }
 
+/*courses.html styles*/
+.custom-carousel-inner{
+  position: relative;
+}
+.pagination-wrapper {
+padding-bottom: 20px;
+position: absolute;
+left: 0;
+right: 0;
+bottom: 2px;
+}
+.form-group {
+border: 1px solid grey;
+display: inline-flex;
+padding: 1px;
+border-radius: 4px;
+}
+.custom-card h5 {
+      font-size: 13px;
+      font-weight: bold;
+      margin-top: 8px;
+      padding-left: 0;
+  }
+
+  .custom-card p {
+      font-size: 13px;
+  }
+
+  .custom-card img {
+      min-height: 180px;
+  }
+
+  .custom-card {
+      border: 0;
+      border-radius: 0;
+      text-align: start;
+      padding: 0;
+      border-radius: 8px 8px 0 0;
+      min-width: 250px;
+  }
+
+  .custom-card .price-review p {
+      color: #87690d;
+      font-weight: bolder;
+      margin-right: 5px;
+  }
+
+  .custom-card button {
+      background-color: #ffc107;
+  }
+
+  @media (max-width:766px) {
+      .custom-card img {
+          min-height: 300px;
+      }
+  }
+
+  @media (max-width:1030px) {
+      .custom-card img {
+          width: 150px;
+      }
+  }
+
+  .below-card-img {
+      padding: 10px;
+      margin-top: 10px;
+  }
+
+  .custom-course-column {
+      break-inside: avoid;
+      margin-bottom: 20px;
+      padding: 10px;
+  }
+
+  .cards-row {
+      height: auto;
+  }
+
+  .carousel-indicators {
+      bottom: -50px;
+  }
+
+  .carousel-indicators li {
+      background-color: #e3a957;
+      height: 5px;
+      width: 40px;
+  }
+
+  .carousel-indicators .active {
+      background-color: #e08709;
+      height: 5px;
+  }
+
+  .custom-card-1 {
+      transition: transform 0.3s ease-in-out;
+  }
+
+  .custom-card-1:hover {
+      transform: scale(1.1);
+      background-color: var(--bg-light-fixed);
+      border: 2px solid var(--border-color-light);
+  }
+
+  .custom-card-1 {
+      overflow: hidden;
+  }
+  .custom-card-1{
+      display: flex;
+      flex-direction: column;
+      background-color: var(--bg-color);
+      height: 220px;
+      border: none;
+      align-items: center;
+      border: 1px solid var(--border-color-light);
+  }
+  .recommends-sect {
+    background-color: var(--bg-color);
+  }
+  .categories-sect {
+    background-color: var(--bg-lightgrey);
+  }
+  select#programSelect {
+    appearance: auto;
+    -webkit-appearance: auto;
+    -moz-appearance: auto;
+
+    width: 130px;
+    padding: 2px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  select#programSelect option {
+    background-color: #fff;
+    color: #333;
+  }
+  select#programSelect option:focus{
+      background-color: bisque;
+  }
+  .custom-row{
+    display: flex;
+    justify-content: space-between;
+  }
+  @media (max-width:466px) {
+    .custom-5{
+      font-size: x-small;
+    }
+}
