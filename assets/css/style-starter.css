@@ -12362,7 +12362,7 @@ span.plus {
 .customers {
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 5%;
