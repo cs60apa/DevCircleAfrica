@@ -9571,6 +9571,7 @@ a.text-dark:hover, a.text-dark:focus {
   --iframe-filter: grayscale(0%);
   --bg-grey: #f7f7f7;
   --bg-lightgrey: #f8f9fa;
+  --line: grey;
   --layer: rgba(0, 0, 0, 0.45); }
 
 [data-theme="dark"] {
@@ -12359,26 +12360,13 @@ span.plus {
 }
 
 /* Customers page styles*/
-.customers {
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5%;
-  margin-bottom: 0;
-  background-color: rgb(145, 143, 153);
-}
-.customers-section-header {
-  text-align: center;
-  margin-top: 4rem;
-}
 .quote-container {
       position: relative;
       height: 70vh;
       background: url("../images/banner2.jpg") center/cover no-repeat;
       overflow: hidden;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       text-align: center;
@@ -12416,6 +12404,59 @@ position: absolute;
 left: 0;
 right: 0;
 bottom: 2px;
+}
+.myP{
+  font-size: 15px;
+  line-height: 1.5;
+}
+.custom-button:hover {
+  background-color: #fcc00e;
+  border: none;
+}
+.custom-button{
+  border: 1px solid #fcc00e;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 30px;
+}
+.line {
+  background-color: var(--line);
+  height: 1px;
+  width: 73%;
+  margin-left: 20%;
+}
+.customers-list{
+  padding: 30px;
+  background-color: var(--bg-grey);
+}
+.custom-a{
+  text-decoration: underline;
+}
+.custom-a:hover{
+  text-decoration: underline;
+}
+@media (max-width:766px) {
+.line {
+display: none;
+}
+}
+@media (max-width:994px) {
+.line {
+margin-left: 7%;
+width: 90%;
+}
+
+}
+.learnmoBtn button{
+border-radius: 30px;
+width: 150px;
+}
+.customers-list {
+  margin-bottom: 0;
+}
+
+.customers {
+  margin-top: 0;
 }
 
 /*Error page styles*/
