@@ -12618,3 +12618,15 @@ border-radius: 4px;
       font-size: x-small;
     }
 }
+.dcustom-card {
+  background-color: var(--bg-lightgrey);
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+.news-letter {
+  background-color: var(--bg-lightgrey);
+}
+.qcontainer {
+  background-color: var(--bg-lightgrey);
+}
