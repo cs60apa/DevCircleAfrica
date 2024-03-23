@@ -12671,3 +12671,10 @@ border-radius: 4px;
 .cards-row .dcustom-card {
   min-width: 18rem;
 }
+
+.getting-started {
+  background-color: var(--bg-lightgrey);
+}
+.teacher:hover{
+  background-color: var(--bg-grey)
+}
