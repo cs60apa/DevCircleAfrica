@@ -12618,3 +12618,63 @@ border-radius: 4px;
       font-size: x-small;
     }
 }
+.dcustom-card {
+  background-color: var(--bg-lightgrey);
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+.news-letter {
+  background-color: var(--bg-lightgrey);
+}
+.qcontainer {
+  background-color: var(--bg-lightgrey);
+}
+/* Docummendation styling */
+.dcustom-card {
+  position: relative;
+}
+.dcustom-card img{
+  position: absolute;
+  left: 15%;
+  top: 8%;
+}
+.dcustom-card h5{
+  margin-top: 30%;
+}
+.news-letter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  border-radius: 10px;
+  padding: 20px;
+  height: fit-content;
+  position: relative;
+}
+.news-letter button {
+  background-color: #ffc107;
+}
+.news-letter input {
+  border: none;
+  height: 45px;
+}
+.news-letter form{
+  display: inline-flex;
+}
+.qcontainer{
+  height: fit-content;
+  text-align: center;
+  padding: 20px;
+}
+
+.cards-row .dcustom-card {
+  min-width: 18rem;
+}
+
+.getting-started {
+  background-color: var(--bg-lightgrey);
+}
+.teacher:hover{
+  background-color: var(--bg-grey)
+}
