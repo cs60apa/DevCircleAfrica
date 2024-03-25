@@ -12675,6 +12675,124 @@ border-radius: 4px;
 .getting-started {
   background-color: var(--bg-lightgrey);
 }
+
+
+
+/* styles for teachers.html */
+#teacher-profile img{
+  border-radius: 0.5rem;
+  width: 90%;
+  height: 50vh;
+}
+#teacher-profile p{
+  text-align: center;
+}
+     
+#teacher-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .teacher:hover{
   background-color: var(--bg-grey)
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+
+#teacher-list .teacher {
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+#teacher-list .list {
+  max-height: 100vh; 
+  overflow-y: auto; 
+}
+
+.teacher img {
+  width: 50px;
+  height: 50px;
+}
+
+.teacher-info {
+  margin-left: 20px;
+}
+.social-icon {
+  font-size: 2rem;
+  margin: 10px;
+}
+.img-stacks {
+  position: relative;
+}
+.img-stacks img {
+  border: 1px solid black;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.img-stacks .one {
+  top: 0;
+  left: 0;
+}
+
+.img-stacks .two {
+  top: 0; 
+  left: 15px; 
+}
+
+.img-stacks .three {
+  top: 0; 
+  left: 30px; 
+}
+
+.img-stacks .four {
+  top: 0; 
+  left: 45px; 
+}   
+.getting-started {
+  width: 85%;
+  padding: 50px;
+}
+.getting-started button {
+  padding: 8px;
+  background-color: #ffc107;
+  border-radius: 10px;
+  border: none;
+  height: 40px;
+}
+.getting-started .right-col {
+  position: relative;
+}
+.getting-started .right-col img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 1rem;
+}
+.getting-started .right-col .img-1{
+  top: 25px;
+  left: 20px;
+}
+.getting-started .right-col .img-2{
+  top: 55px;
+  left: 100px;
+}
+.getting-started .right-col .img-3{
+  top: 105px;
+  left: 180px;
 }
