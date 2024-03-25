@@ -18,19 +18,17 @@ Author URL: http://DevCircleAfrica.com
     <!-- <meta http-equiv="refresh" content="5"> -->
 
     <title>DevCircle Africa</title>
-    <link rel="icon" type="image/x-icon" href="assets/images/icon.png">
+    <link rel="icon" type="image/x-icon" href="../assets/images/icon.png">
 
     <!-- google fonts -->
     <link href="//fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
     <link href="//fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     
     <!-- Template CSS -->
-    <link rel="stylesheet" href="assets/css/style-starter.css">
+    <link rel="stylesheet" href="../assets/css/style-starter.css">
     <!--   ads   -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5141290108997002"
      crossorigin="anonymous"></script>
-     
-<!-- End ads    -->
   </head>
   <body>
 <!--header-->
@@ -39,7 +37,7 @@ Author URL: http://DevCircleAfrica.com
     <nav class="navbar navbar-expand-lg navbar-dark stroke">
       <h1>
         <a class="navbar-brand" href="index.html">
-          <span> <img src="assets/images/icon.png" height="40px"/> </span>Study Course <span class="logo">Journey to success</span></a>
+          <span> <img src="../assets/images/icon.png" height="40px"/> </span>Study Course <span class="logo">Journey to success</span></a>
       </h1>
 
       
@@ -54,16 +52,16 @@ Author URL: http://DevCircleAfrica.com
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav mx-lg-auto">
           <li class="nav-item @@home__active">
-            <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="../index.html">Home</a>
           </li>
           <li class="nav-item @@about__active">
-            <a class="nav-link" href="./about.html">About</a>
+            <a class="nav-link" href="../about.html">About</a>
           </li>
           <li class="nav-item @@courses__active">
-            <a class="nav-link" href="./features/courses.html">Courses</a>
+            <a class="nav-link" href="./courses.html">Courses</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="./contact.html">Contact</a>
+            <a class="nav-link" href="../contact.html">Contact</a>
           </li>
           <li class="nav-item @@contact__active">
             <a class="nav-link" href="https://devcircleafrica.com/blogs/">Blog</a>
@@ -77,7 +75,7 @@ Author URL: http://DevCircleAfrica.com
           <div id="search" class="pop-overlay">
             <div class="popup">
 
-              <form action="error.html" method="GET" class="search-box">
+              <form action="../error.html" method="GET" class="search-box">
                 <input type="search" placeholder="Search" name="search" required="required" autofocus="">
                 <button type="submit" class="btn"><span class="fa fa-search" aria-hidden="true"></span></button>
               </form>
@@ -114,10 +112,10 @@ Author URL: http://DevCircleAfrica.com
 <section class="w3l-breadcrumb">
     <div class="breadcrumb-bg breadcrumb-bg-about py-5">
         <div class="container pt-lg-5 pt-3 p-lg-4 pb-3">
-            <h2 class="title mt-5 pt-lg-5 pt-sm-3"> <a href="#">404 Error</a></h2>
+            <h2 class="title mt-5 pt-lg-5 pt-sm-3"> <a href="#">Teachers</a></h2>
             <ul class="breadcrumbs-custom-path pb-sm-5 pb-4 mt-2 text-center mb-md-5">
-                <li><a href="index.html">Home</a></li>
-                <li class="active"> / Fatal error </li>
+                <li><a href="../index.html">Home</a></li>
+                <li class="active"> / Teachers </li>
             </ul>
         </div>
     </div>
@@ -127,15 +125,133 @@ Author URL: http://DevCircleAfrica.com
         </svg>
     </div>
 </section>
+<section>
+  <div class="container">
+    <h5 class="title-small mb-1 text-center">Empowering Minds, Shaping Futures</h5>
+    <h3 class="title-big mb-sm-5 mb-5 text-center">Meet Teachers</h3>
+    <div class="row mt-5">
+      <div class="col-md-6 mt-5 mr-4 mb-5">
+        <div id="teacher-profile">
+          <img src="../assets/images/a2.jpg" class="img-fluid" alt="Teacher 1">
+          <div class="social-icons mt-3">
+            <a href="#" class="social-icon">
+              <div class="fa fa-facebook-f"></div>
+            </a>
+            <a href="#" class="social-icon">
+              <div class="fa fa-twitter"></div>
+            </a>
+            <a href="#" class="social-icon">
+              <div class="fa fa-whatsapp"></div>
+            </a>
+          </div>
+          <h3 class="title-small text-center">Software Engineer</h3>
+          <h4 class="title-big text-center mb-sm-5 mb-5">David Promise Jiri</h4>
+          <p class="mt-3 md-3">Embark on a digital journey with the wizard of software alchemy, David 'Promise' Jiri. Witness the magic of coding unravel as he weaves spells of innovation and problem-solving. Let his passion for technology ignite your curiosity and lead you into the enchanting realm of software engineering!</p>
+        </div>
+      </div>
+      <div class="col-md-5 mt-5 ml-5 border border-green p-4 rounded" id="teacher-list">
+        <h3 class="title-big mb-sm-5 mb-5">Find Teacher</h3>
+        <div class="list mt-4">
+          <div class="teacher" onclick="displayTeacherDetails(1)">
+            <img src="../assets/images/a2.jpg" class="img-fluid" alt="Teacher 1">
+            <div class="teacher-info">
+              <h4 class="title-small">Software Engineer</h4>
+              <p >David Promise Jiri</p>
+            </div>
+          </div>
+          <div class="teacher" onclick="displayTeacherDetails(2)">
+            <img src="../assets/images/a4.jpg" class="img-fluid" alt="Teacher 1">
+            <div class="teacher-info">
+              <h4 class="title-small">Managing Director</h4>
+              <p>Farai White</p>
+            </div>
+          </div>
+          <div class="teacher" onclick="displayTeacherDetails(3)">
+            <img src="../assets/images/c1.jpg" class="img-fluid" alt="Teacher 1">
+            <div class="teacher-info">
+              <h4 class="title-small">Teacher</h4>
+              <p>Anesu Wright</p>
+            </div>
+          </div>
+          <div class="teacher" onclick="displayTeacherDetails(4)">
+            <img src="https://secure.gravatar.com/avatar/ce91dc2caa9c90f04bf89074655d461e?s=215&d=mm&r=g" class="img-fluid" alt="Teacher 1">
+            <div class="teacher-info">
+              <h4 class="title-small">Director</h4>
+              <p>Mark Sikaundi</p>
+            </div>
+          </div>
+          <div class="teacher" onclick="displayTeacherDetails(1)">
+            <img src="../assets/images/a2.jpg" class="img-fluid" alt="Teacher 1">
+            <div class="teacher-info">
+              <h4 class="title-small">Software Engineer</h4>
+              <p>David Promise Jiri</p>
+            </div>
+          </div>
+          <div class="teacher" onclick="displayTeacherDetails(2)">
+            <img src="../assets/images/a4.jpg" class="img-fluid" alt="Teacher 1">
+            <div class="teacher-info">
+              <h4 class="title-small">Managing Director</h4>
+              <p>Farai White</p>
+            </div>
+          </div>
+          <div class="teacher" onclick="displayTeacherDetails(1)">
+            <img src="../assets/images/a2.jpg" class="img-fluid" alt="Teacher 1">
+            <div class="teacher-info">
+              <h4 class="title-small">Software Engineer</h4>
+              <p>David Promise Jiri</p>
+            </div>
+          </div>
+          <div class="teacher" onclick="displayTeacherDetails(2)">
+            <img src="../assets/images/a4.jpg" class="img-fluid" alt="Teacher 1">
+            <div class="teacher-info">
+              <h4 class="title-small">Managing Director</h4>
+              <p>Farai White</p>
+            </div>
+          </div>
+          <div class="teacher" onclick="displayTeacherDetails(1)">
+            <img src="../assets/images/a2.jpg" class="img-fluid" alt="Teacher 1">
+            <div class="teacher-info">
+              <h4 class="title-small">Software Engineer</h4>
+              <p>David Promise Jiri</p>
+            </div>
+          </div>
+          <div class="teacher" onclick="displayTeacherDetails(2)">
+            <img src="../assets/images/a4.jpg" class="img-fluid" alt="Teacher 1">
+            <div class="teacher-info">
+              <h4 class="title-small">Managing Director</h4>
+              <p>Farai White</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-<div class="main_cont">
-  <img src="./assets/images/404error.png" alt="oops photo" class="img-fluid">
-  <h2>Sorry, an error occured!</h2>
-  <button type="button" class="btn btn-primary btn-style mt-md-5 mt-4"><a href="./index.html">GO TO HOME</a></button>
-</div>
-
-<!-- //contact block -->
-<!-- footer -->
+<section>
+  <div class="container getting-started mt-5 mb-5">
+    <div class="row">
+      <div class="col">
+        <h5 class="title-big mb-sm-5 mb-5 mt-4">Get Started Today!</h5>
+        <p class="mt-4 mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque qui, cupiditate inventore modi quisquam harum, aliquid esse numquam vel tempora</p>
+        <button class="mb-4 mt-2">Explore Courses</button>
+        <div class="img-stacks">
+          <img src="../assets/images/a1.jpg" alt="" width="30px"  class="one">
+          <img src="../assets/images/a2.jpg" alt="" width="30px"  class="two">
+          <img src="../assets/images/a3.jpg" alt="" width="30px"  class="three">
+          <img src="../assets/images/a4.jpg" alt="" width="30px"  class="four">
+          <p style="margin-left: 85px;" class="mt-3 mb-4">Trusted by over 10,000 students</p>
+          <div class="mb-2"></div>
+        </div>
+      </div>
+      <div class="col right-col">
+        <img src="../assets/images/c4.jpg" alt="" class="img-fluid img-1" width="300px">
+        <img src="../assets/images/about.jpg" alt="" class="img-fluid img-2" width="300px">
+        <img src="../assets/images/c1.jpg" alt="" class="img-fluid img-3" width="300px">
+      </div>
+    </div>
+  </div>
+</section>
 <section class="w3l-footer-29-main">
   <div class="footer-29 py-5">
     <div class="container py-md-4">
@@ -156,29 +272,29 @@ Author URL: http://DevCircleAfrica.com
 
           <ul>
             <h6 class="footer-title-29">Company</h6>
-            <li><a href="./about.html">About company</a></li>
-            <li><a href="./features/latest_blogs.html"> Latest Blog posts</a></li>
+            <li><a href="../about.html">About company</a></li>
+            <li><a href="./latest_blogs.html"> Latest Blog posts</a></li>
             <li><a href="https://lms.devcircleafrica.com/user-public-account/"> Become a teacher </a>
-            <li><a href="./features/courses.html">Online Courses</a></li>
-            <li><a href="./contact.html">Get in touch</a></li>
+            <li><a href="./courses.html">Online Courses</a></li>
+            <li><a href="../contact.html">Get in touch</a></li>
           </ul>
         </div>
         <div class="col-lg-2 col-md-6 col-sm-5 col-6 footer-list-29 footer-3 mt-lg-0 mt-5">
           <h6 class="footer-title-29">Programs</h6>
           <ul>
-            <li><a href="./features/training_center.html">Training Center</a></li>
-            <li><a href="./features/documentation.html">Documentation</a></li>
+            <li><a href="./training_center.html">Training Center</a></li>
+            <li><a href="./documentation.html">Documentation</a></li>
             <li><a href="https://forum.devcircleafrica.com/">Community</a></li>
-            <li><a href="./features/customers.html"> Customers</a></li>
+            <li><a href="./customers.html"> Customers</a></li>
             <li><a href="https://devcircleafrica.com/devhelp"> Dev Help</a></li>
           </ul>
 
         </div>
         <div class="col-lg-3 col-md-6 col-sm-7 footer-list-29 footer-4 mt-lg-0 mt-5">
           <h6 class="footer-title-29">Suppport</h6>
-          <a href="#playstore"><img src="assets/images/googleplay.png" class="img-responsive" alt=""></a>
-          <a href="#appstore"><img src="assets/images/appstore.png" class="img-responsive mt-3" alt=""></a>
-          <a href="https://www.f6s.com/devcircleafrica?follow=1" target="_blank" title="Follow DevCircle Africa on F6S"><img src="assets/images/f6s.png" width="175px" height="60px" class="img-responsive mt-3" alt="Follow DevCircle Africa on F6S"/></a>
+          <a href="#playstore"><img src="../assets/images/googleplay.png" class="img-responsive" alt=""></a>
+          <a href="#appstore"><img src="../assets/images/appstore.png" class="img-responsive mt-3" alt=""></a>
+          <a href="https://www.f6s.com/devcircleafrica?follow=1" target="_blank" title="Follow DevCircle Africa on F6S"><img src="../assets/images/f6s.png" width="175px" height="60px" class="img-responsive mt-3" alt="Follow DevCircle Africa on F6S"/></a>
         </div>
       </div>
     </div>
@@ -214,18 +330,18 @@ Author URL: http://DevCircleAfrica.com
 </section>
 <!-- //footer -->
 
-<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="../assets/js/jquery-3.3.1.min.js"></script>
 
-<script src="assets/js/theme-change.js"></script>
+<script src="../assets/js/theme-change.js"></script>
 
-<script src="assets/js/jquery.waypoints.min.js"></script>
-<script src="assets/js/jquery.countup.js"></script>
+<script src="../assets/js/jquery.waypoints.min.js"></script>
+<script src="../assets/js/jquery.countup.js"></script>
 <script>
   $('.counter').countUp();
 </script>
 <!-- //stats number counter -->
 
-<script src="assets/js/owl.carousel.js"></script>
+<script src="../assets/js/owl.carousel.js"></script>
 <script>
   $(document).ready(function () {
     $('.owl-one').owlCarousel({
@@ -320,7 +436,7 @@ Author URL: http://DevCircleAfrica.com
 </script>
 <!--//MENU-JS-->
 
-<script src="assets/js/bootstrap.min.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
 
 
 </body>
