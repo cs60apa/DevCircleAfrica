@@ -12682,7 +12682,12 @@ border-radius: 4px;
 #teacher-profile img{
   border-radius: 0.5rem;
   width: 90%;
-  height: 50vh;
+  max-height: 65vh;
+}
+@media (max-width: 470px) {
+  #teacher-profile img {
+    height: 50vh;
+  }
 }
 #teacher-profile p{
   text-align: center;
@@ -12693,6 +12698,7 @@ border-radius: 4px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 10px 0;
 }
 .teacher:hover{
   background-color: var(--bg-grey)
@@ -12709,23 +12715,30 @@ border-radius: 4px;
   height: 30px;
 }
 
+#teacher-list {
+  width: 100%;
+  box-shadow: 2px 2px 5px #6c757d;
+  height: fit-content;
+  padding: 20px;
+}
 
 #teacher-list .teacher {
   cursor: pointer;
   border-bottom: 1px solid #ddd;
-  padding: 10px 0;
+  padding: 5px 0;
   display: flex;
   align-items: center;
 }
 
 #teacher-list .list {
-  max-height: 100vh; 
+  max-height: 110vh; 
   overflow-y: auto; 
 }
 
 .teacher img {
   width: 50px;
   height: 50px;
+  border-radius: 25px;
 }
 
 .teacher-info {
@@ -12765,7 +12778,7 @@ border-radius: 4px;
   left: 45px; 
 }   
 .getting-started {
-  width: 85%;
+  width: 100%;
   padding: 50px;
 }
 .getting-started button {
@@ -12795,4 +12808,9 @@ border-radius: 4px;
 .getting-started .right-col .img-3{
   top: 105px;
   left: 180px;
+}
+@media (max-width: 1172px) {
+  .getting-started .right-col {
+    display: none;
+  }
 }
