@@ -12814,3 +12814,10 @@ border-radius: 4px;
     display: none;
   }
 }
+.what-we-do .wcustom-card {
+  background-color: var(--border-color-light);
+}
+.what-we-do {
+  background-color: var(--bg-lightgrey);
+  padding: 20px;
+}
