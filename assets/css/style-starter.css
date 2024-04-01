@@ -12362,7 +12362,7 @@ span.plus {
 /* Customers page styles*/
 .quote-container {
       position: relative;
-      height: 70vh;
+      height: 80vh;
       background: url("../images/banner2.jpg") center/cover no-repeat;
       overflow: hidden;
       display: flex;
@@ -12370,6 +12370,12 @@ span.plus {
       align-items: center;
       justify-content: center;
       text-align: center;
+  }
+  .carousel-item .quote-container .cont-1{
+    background: url("../images/banner1.jpg") center/cover no-repeat;
+  }
+  .quote-container .cont-2{
+    background: url("../images/banner3.jpg") center/cover no-repeat;
   }
 
   .gradient-overlay {

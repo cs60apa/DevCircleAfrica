@@ -34,7 +34,7 @@ Author URL: http://DevCircleAfrica.com
   </head>
   <style>
     .p-custom{
-      width: 70%;
+      width: 90%;
       text-align: center;
     }
     .welcome-sect .custom-row .custom-col {
@@ -56,10 +56,11 @@ Author URL: http://DevCircleAfrica.com
     .below-welcome-sect {
       width: 100%;
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      margin: 0 30px;
-      
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 16px;
     }
     .number {
       width: 50px;
@@ -72,20 +73,21 @@ Author URL: http://DevCircleAfrica.com
       color: white;
       font-size: 24px;
       position: absolute;
-      top:46%;
-      left: 40%;
+      top:50%;
+      left: 43%;
 
     }
     .what-we-do .wcustom-card {
-      width: 14rem;
       margin: 0 5px;
       position: relative;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      justify-items: center;
       align-items: center;
       border: none;
       border-radius: 20px;
+      margin-bottom: 20px;
     }
     .what-we-do .wcustom-card img{
      height: 40px;
@@ -130,19 +132,61 @@ Author URL: http://DevCircleAfrica.com
       background-color: #ffc107;
       color: white;
       padding: 5px;
+      padding-left: 10px;
+      padding-right: 10px;
       border: none;
       border-radius: 5px;
     }
+    .wcustom-card .btn {
+      width: max-content;
+    }
+    .wcustom-card .card-body {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+}
     .main-right {
       display: flex;
       margin: 20px 0;
       padding: 10px 0;
-      align-items: center;
+      align-items: flex-start;
     }
     .main-right img{
-      width: 400px;
-      height: 150px;
+      max-width: 18rem;
+      height: 170px;
       margin-right: 20px;
+      border-radius: 8px;
+    }
+    @media (max-width: 521px) {
+      .main-right {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .capabilities-sect {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .main-right p {
+        margin-top: 10px;
+      }
+      .main-right h5 {
+        margin-top: 10px;
+      }
+    }
+    @media (max-width: 943px) {
+      .p-custom{
+      width: 100%;
+    }
+    .welcome-sect h4 {
+      margin-bottom: 10px;
+    }
+    .line-1 {
+      width: 30%;
+    }
     }
     .carousel-indicators {
       bottom: 0;
@@ -159,7 +203,7 @@ Author URL: http://DevCircleAfrica.com
     }
     .carousel-indicators {
   position: absolute;
-  bottom: 10px;
+  bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -188,6 +232,24 @@ Author URL: http://DevCircleAfrica.com
 }
 .mycarousel {
   height: 100vh;
+}
+.card-img-top {
+  min-width: 100%;
+}
+@media (max-width: 1200px) {
+  .number {
+    top: 40%;
+  }
+}
+@media (max-width: 767px) {
+  .number {
+    top: 60%;
+  }
+}
+@media (max-width: 468px) {
+  .number {
+    top: 55%;
+  }
 }
 
   </style>
@@ -301,33 +363,33 @@ Author URL: http://DevCircleAfrica.com
 <section>
   <div class="container">
     <div class="row below-welcome-sect">
-      <div class="col mb-5">
-        <div class="card custom-card" style="width: 18rem;">
-          <img class="card-img-top" src="./assets/images/about.jpg" alt="Card image cap">
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+        <div class="card custom-card">
+          <img class="card-img-top" src="./assets/images/about.jpg" width="100%" alt="Card image cap">
           <div class="card-body">
             <div class="number">01</div>
-            <h5 class="card-title text-center mt-3">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 class="card-title text-center mt-4">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
         </div>
       </div>
-      <div class="col mb-5">
-        <div class="card custom-card" style="width: 18rem;">
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+        <div class="card custom-card" >
           <img class="card-img-top" src="./assets/images/c1.jpg" alt="Card image cap">
           <div class="card-body">
             <div class="number">02</div>
-            <h5 class="card-title text-center mt-3">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 class="card-title text-center mt-4">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
         </div>
       </div>
-      <div class="col mb-5">
-        <div class="card custom-card" style="width: 18rem;">
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+        <div class="card custom-card">
           <img class="card-img-top" src="./assets/images/c2.jpg" alt="Card image cap">
           <div class="card-body">
             <div class="number">03</div>
-            <h5 class="card-title text-center mt-3">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 class="card-title text-center mt-4">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
         </div>
       </div>
@@ -349,51 +411,56 @@ Author URL: http://DevCircleAfrica.com
 </div>
   <div class="container mb-5">
     <div class="row ml-4 mr-4 mb-5">
-      <div class="col">
+      <div class="col-lg-3 col-md-6 col-sm-10">
         <div class="card wcustom-card">
           <div class="p-3 mt-3 rounded-circle card-img-cover" >
             <img  src="./assets/images/gettingstarted.png" class="">
           </div>
           <div class="card-body">
             <h5 class="card-title text-center">Special title</h5>
-            <p class="card-text text-center small">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary mt-2 ml-4">Go somewhere</a>
+            <p class="card-text text-center small">With supporting text below as a natural lead-in to additional content. <br>
+              <a href="#" class="btn btn-primary mt-2">Go somewhere</a>
+            </p>
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col-lg-3 col-md-6 col-sm-10">
         <div class="card wcustom-card">
           <div class="p-3 mt-3 rounded-circle card-img-cover" >
             <img  src="./assets/images/gettingstarted.png" class="">
           </div>
           <div class="card-body">
             <h5 class="card-title text-center">Special title</h5>
-            <p class="card-text text-center small">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary mt-2 ml-4">Go somewhere</a>
+            <p class="card-text text-center small">With supporting text below as a natural lead-in to additional content. <br>
+              <a href="#" class="btn btn-primary mt-2">Go somewhere</a>
+            </p>
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col-lg-3 col-md-6 col-sm-10">
         <div class="card wcustom-card">
           <div class="p-3 mt-3 rounded-circle card-img-cover" >
             <img  src="./assets/images/gettingstarted.png" class="">
           </div>
           <div class="card-body">
             <h5 class="card-title text-center">Special title</h5>
-            <p class="card-text text-center small">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary mt-2 ml-4">Go somewhere</a>
+            <p class="card-text text-center small">With supporting text below as a natural lead-in to additional content. <br>
+              <a href="#" class="btn btn-primary mt-2">Go somewhere</a>
+            </p>
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col-lg-3 col-md-6 col-sm-10">
         <div class="card wcustom-card">
           <div class="p-3 mt-3 rounded-circle card-img-cover" >
             <img  src="./assets/images/gettingstarted.png" class="">
           </div>
           <div class="card-body">
             <h5 class="card-title text-center">Special title</h5>
-            <p class="card-text text-center small">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary mt-2 ml-4">Go somewhere</a>
+            <p class="card-text text-center small">With supporting text below as a natural lead-in to additional content. <br>
+              <a href="#" class="btn btn-primary mt-2">Go somewhere</a>
+            </p>
+            
           </div>
         </div>
       </div>
@@ -403,7 +470,7 @@ Author URL: http://DevCircleAfrica.com
 <section class="mb-5 mt-5">
   <div class="container">
     <div class="row">
-      <div class="col">
+      <div class="col-lg-6 col-md-10 col-sm-12">
         <h3 class="mb-sm-4 mb-3 adheading title-big">Why choose us</h3>
         <div class="main-left">
           <img src="./assets/images/forumicon.png" alt="">
@@ -416,28 +483,28 @@ Author URL: http://DevCircleAfrica.com
           <img src="./assets/images/forumicon.png" alt="">
           <div>
             <h5 class="title-small">Lorem ipsum dolor.</h5>
-            <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure deserunt assumenda cum libero iusto similique itaque dignissimos mollitia.</p>
+            <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure deserunt assumenda cum libero iusto similique itaque dignissimos mollitia delectus recusandae, numquam mollitia delectus recusandae, numquam.</p>
+            <button class="custom-button mt-3">Button</button>
           </div>
         </div>
-        <button class="custom-button mt-3 ml-4">Button</button>
       </div>
-      <div class="col mr-2 ">
+      <div class="col-lg-6 col-md-10 col-sm-12 capabilities-sect">
         <h3 class="mb-sm-4 mb-3 title-big">Our Capabilities</h3>
         <div class="main-right">
-          <img src="./assets/images/banner2.jpg" alt="">
+          <img src="./assets/images/banner2.jpg" alt="" class="img-fluid">
           <div>
-            <h5 class="title-small">Lorem ipsum dolor.</h5>
-            <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure deserunt assumenda cum libero iusto similique itaque dignissimos mollitia.</p>
+            <h5 class="title-small ">Lorem ipsum dolor.</h5>
+            <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure deserunt assumenda cum libero iusto similique.</p>
           </div>
         </div>
         <div class="main-right">
           <img src="./assets/images/banner1.jpg" alt="">
           <div>
             <h5 class="title-small">Lorem ipsum dolor.</h5>
-            <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure deserunt assumenda cum libero iusto similique itaque dignissimos mollitia.</p>
+            <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure deserunt assumenda cum libero iusto similique.</p>
           </div>
         </div>
-        <button class="custom-button">Button</button>
+        <button class="custom-button mt-3">Button</button>
       </div>
     </div>
   </div>
@@ -458,7 +525,7 @@ Author URL: http://DevCircleAfrica.com
               <img src="./assets/images/quotes1.png" alt="quotes icon" width="40px">
               <div class="line-2 ml-3"></div>
             </div>
-            <p class="p-custom mb-2 quote-text mt-3">This is DevCircle Africa, the all in one platform to mentor and aquip you to make your way in the dynamic world of technology though comprehensive upto date courses by industry experts.</p>
+            <p class="p-custom quote-text mt-3">This is DevCircle Africa, the all in one platform to mentor and aquip you to make your way in the dynamic world of technology though comprehensive upto date courses by industry experts.</p>
             <div class="quote-text last-quote-text mt-5">
                <div class="line-3 mt-4"></div>
                <p class="mt-4">David SE</p>
@@ -467,14 +534,14 @@ Author URL: http://DevCircleAfrica.com
         </div>
     </div>
     <div class="carousel-item">
-        <div class="quote-container">
+        <div class="quote-container cont-1">
             <div class="gradient-overlay"></div>
             <div class="quote-text mt-0">
               <div class="line-2 mr-3"></div>
               <img src="./assets/images/quotes1.png" alt="quotes icon" width="40px">
               <div class="line-2 ml-3"></div>
             </div>
-            <p class="p-custom mb-2 quote-text">This is DevCircle Africa, the all in one platform to mentor and aquip you to make your way in the dynamic world of technology though comprehensive upto date courses by industry experts.</p>
+            <p class="p-custom quote-text">This is DevCircle Africa, the all in one platform to mentor and aquip you to make your way in the dynamic world of technology though comprehensive upto date courses by industry experts.</p>
             <div class="quote-text last-quote-text mt-5">
               <div class="line-3 mt-4"></div>
               <p class="mt-4">Angela CTO</p>
@@ -483,26 +550,24 @@ Author URL: http://DevCircleAfrica.com
         </div>
     </div>
     <div class="carousel-item">
-        <div class="quote-container">
+        <div class="quote-container cont-2">
             <div class="gradient-overlay"></div>
             <div class="quote-text mt-0">
               <div class="line-2 mr-3"></div>
               <img src="./assets/images/quotes1.png" alt="quotes icon" width="40px">
               <div class="line-2 ml-3"></div>
             </div>
-            <p class="p-custom mb-2 quote-text">This is DevCircle Africa, the all in one platform to mentor and aquip you to make your way in the dynamic world of technology though comprehensive upto date courses by industry experts.</p>
+            <p class="p-custom quote-text">This is DevCircle Africa, the all in one platform to mentor and aquip you to make your way in the dynamic world of technology though comprehensive upto date courses by industry experts.</p>
             <div class="quote-text last-quote-text mt-5">
-              <div class="line-3 mt-4"></div>
-              <p class="mt-4">Mark CEO</p>
-              <div class="line-3 mt-4"></div>
+              <div class="line-3"></div>
+              <p class="">Mark CEO</p>
+              <div class="line-3"></div>
            </div>
         </div>
     </div>
   </div>
 </div>
 
-<!-- //contact block -->
-<!-- footer -->
 <section class="w3l-footer-29-main">
   <div class="footer-29 py-5">
     <div class="container py-md-4">
