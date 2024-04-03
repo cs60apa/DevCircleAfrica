@@ -12362,7 +12362,7 @@ span.plus {
 /* Customers page styles*/
 .quote-container {
       position: relative;
-      height: 70vh;
+      height: 80vh;
       background: url("../images/banner2.jpg") center/cover no-repeat;
       overflow: hidden;
       display: flex;
@@ -12370,6 +12370,12 @@ span.plus {
       align-items: center;
       justify-content: center;
       text-align: center;
+  }
+  .carousel-item .quote-container .cont-1{
+    background: url("../images/banner1.jpg") center/cover no-repeat;
+  }
+  .quote-container .cont-2{
+    background: url("../images/banner3.jpg") center/cover no-repeat;
   }
 
   .gradient-overlay {
@@ -12389,12 +12395,7 @@ span.plus {
       padding: 20px;
       z-index: 1;
   }
-  .custom-card {
-    background-color: var(--bg-lightgrey);
-    border: 0.5px solid lightgray;
-    border: 0.5px solid var(--bg-grey);
-
-  }
+  
   .custom-carousel-inner{
     position: relative;
 }
@@ -12418,6 +12419,7 @@ bottom: 2px;
   padding: 10px;
   font-weight: bold;
   border-radius: 30px;
+  color: var(--heading-color)
 }
 .line {
   background-color: var(--line);
@@ -12646,7 +12648,7 @@ border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80%;
+  width: 100%;
   border-radius: 10px;
   padding: 20px;
   height: fit-content;
@@ -12813,4 +12815,11 @@ border-radius: 4px;
   .getting-started .right-col {
     display: none;
   }
+}
+.what-we-do .wcustom-card {
+  background-color: var(--border-color-light);
+}
+.what-we-do {
+  background-color: var(--bg-lightgrey);
+  padding: 20px;
 }
